@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= code %> | URL Shortener</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <nav>
+      <a href="/" id="nav-title">URL Shortener</a>
+      <ul id="nav-list">
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="page-title">Error</h1>
+      <h2 id="error-code"><%= code %> </h2>
+      <p id="error-msg"><%= msg %> </p>
+      <a id="back" href="/">Back</a>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2020 Kaveh Jamshidi. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>

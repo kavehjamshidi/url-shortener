@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success | URL Shortener</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <nav>
+      <a href="/" id="nav-title">URL Shortener</a>
+      <ul id="nav-list">
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="page-title">Success!</h1>
+      <p id="long-url">Original URL: <a href="<%= original %> " target="_blank"><%= original %></a></p>
+      <p id="short-url">Shortened URL: <a href="<%= short %> " target="_blank"><%= short %></a> </p>
+      <a id="back" href="/">Shorten Another URL</a>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2020 Kaveh Jamshidi. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+#wrap {
+  padding-bottom: 40px;
+}
+
+nav {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  height: 40px;
+  padding: 0 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+main {
+  font-family: 'Lato', sans-serif;
+  margin: 50px auto;
+  width: 70%;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  margin: 50px auto;
+  justify-content: space-around;
+  max-width: 100%;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+form input {
+  width: 600px;
+  min-width: 0;
+  height: 50px;
+  font-size: 1.2rem;
+  border: 2px solid #061c7a;
+  border-radius: 0.5rem;
+  padding: 0 10px;
+}
+
+form button {
+  min-width: 0;
+  height: 50px;
+  width: 150px;
+  border: 2px solid #061c7a;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: #c9d3ff;
+}
+
+form button:hover {
+  border: 5px double #061c7a;
+}
+
+form input:focus {
+  outline: none;
+  border: 5px double #061c7a;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+#error-code {
+  width: 100%;
+  text-align: left;
+}
+
+#back {
+  float: left;
+  font-size: 1.2rem;
+}
+
+.about-p,
+#error-msg,
+#about-list,
+#long-url,
+#short-url {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: left;
+}

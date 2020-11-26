@@ -9,6 +9,10 @@ const shortenerRoutes = require('./routes/shortenerRoutes');
 const aboutRoutes = require('./routes/aboutRoutes');
 const notFoundController = require('./controllers/notFoundController');
 const errorMiddleware = require('./middlewares/errorMiddleware');
+const logger = require('./utils/logger');
+
+// Initializing "unhandled promise rejection and uncaugh exception" handler
+require('./utils/catchErrors')();
 
 const app = express();
 
@@ -19,8 +23,7 @@ mongoose
     useCreateIndex: true,
     useFindAndModify: false,
   })
-  .then(() => console.log('Connected to DB...'))
-  .catch((err) => console.log(err));
+  .then(() => logger.info('Connected to DB...'));
 
 app.use(helmet());
 app.use(compression());

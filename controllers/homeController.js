@@ -5,6 +5,10 @@ const home = (req, res) => {
   return res.status(200).render('home.ejs');
 };
 
+const favicon = (req, res) => {
+  return res.send();
+};
+
 const redirectToDestination = catchAsyncMiddleware(async (req, res, next) => {
   const originalUrl = await URL.findOne({ shortUrl: req.params.id });
   if (originalUrl) {
@@ -13,4 +17,4 @@ const redirectToDestination = catchAsyncMiddleware(async (req, res, next) => {
   next();
 });
 
-module.exports = { home, redirectToDestination };
+module.exports = { home, redirectToDestination, favicon };

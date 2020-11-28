@@ -12,5 +12,5 @@ module.exports = (err, req, res, next) => {
   }
   return res
     .status(err.statusCode)
-    .render('error', { code: err.statusCode, msg: 'Internal server error' });
+    .render('error', { code: err.statusCode, msg: 'Internal server error.' });
 };

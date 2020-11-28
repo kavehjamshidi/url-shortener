@@ -23,7 +23,7 @@ mongoose
     useCreateIndex: true,
     useFindAndModify: false,
   })
-  .then(() => logger.info('Connected to DB...'));
+  .then(() => logger.info(`Connected to DB at ${process.env.DB_URI}`));
 
 app.use(helmet());
 app.use(compression());

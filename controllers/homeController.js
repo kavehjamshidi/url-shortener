@@ -2,7 +2,7 @@ const URL = require('../models/urlModel');
 const catchAsyncMiddleware = require('../middlewares/catchAsyncMiddleware');
 
 const home = (req, res) => {
-  return res.status(200).render('home.ejs');
+  return res.status(200).render('home');
 };
 
 const favicon = (req, res) => {

@@ -40,7 +40,7 @@ describe('/', () => {
 
       expect(res.status).toBe(404);
       expect(res.text).toContain('<title>404 | URL Shortener</title>');
-      expect(res.text).toContain('Can&#39;t find requested URL.');
+      expect(res.text).toContain('Cannot find requested URL.');
     });
 
     it('should successfully redirect to another destination', async () => {

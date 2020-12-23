@@ -10,7 +10,7 @@ describe('/', () => {
   beforeEach(async () => {
     server = app.listen(process.env.PORT || 5000);
     await URL.create({ url: 'google.com' });
-    ({ shortUrl } = await URL.findOne({ url: 'http://google.com' }));
+    ({ shortUrl } = await URL.findOne({ url: 'https://google.com' }));
   });
   afterEach(async () => {
     await server.close();

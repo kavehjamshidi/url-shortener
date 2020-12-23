@@ -31,7 +31,10 @@ urlSchema.pre('validate', async function (next) {
 
 // Normalizing the URL after validation
 urlSchema.pre('save', async function (next) {
-  this.url = normalizeUrl(this.url);
+  this.url = normalizeUrl(this.url, {
+    defaultProtocol: 'https:',
+    stripWWW: false,
+  });
   next();
 });
 

@@ -16,6 +16,10 @@ $ cd url-shortner
 
 ```bash
 $ npm install
+```  
+Installing the devevelopent dependencies used for **testing** and **linting**:  
+```bash
+$ npm install --only=dev
 ```
 
 ### Setting up environment variables
@@ -32,4 +36,9 @@ These environment variable could be set at OS level or be placed in a .env file 
 
 ```bash
 $ npm start
+```
+### Running unit and integration tests  
+
+```bash
+$ npm test
 ```
